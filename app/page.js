@@ -27,7 +27,7 @@ export default function HomePage() {
           <div className="mt-12 space-x-6 animate-slideUp delay-300">
             <a
               href="/join"
-              className="inline-block bg-gradient-to-r from-sky-600 to-blue-700 text-white font-semibold px-10 py-4 rounded-lg shadow-lg hover:from-sky-700 hover:to-blue-800 transition-all duration-300"
+              className="inline-block bg-white/10 backdrop-blur-md text-white font-semibold px-10 py-4 rounded-lg hover:bg-white/20 transition-all duration-300"
             >
               지원하기 
             </a>
