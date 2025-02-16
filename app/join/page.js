@@ -5,7 +5,7 @@ export default function JoinPage() {
       <div className="relative bg-gradient-to-r from-navy to-sky-900 py-32 px-6 text-center overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:60px_60px]" />
         <div className="relative z-10 max-w-4xl mx-auto">
-          <span className="inline-block text-sky-400 font-semibold mb-4 animate-fadeInUp">2024년 상반기 모집</span>
+          <span className="inline-block text-sky-400 font-semibold mb-4 animate-fadeInUp">2025년 상반기 모집</span>
           <h1 className="text-6xl font-extrabold text-white mb-8 animate-fadeInUp delay-100">Join CREAI+IT</h1>
           <p className="text-xl text-white/90 leading-relaxed animate-fadeInUp delay-200">
             AI 기술과 창업 역량을 함께 키우며<br />
@@ -22,8 +22,9 @@ export default function JoinPage() {
               <h3 className="text-2xl font-bold text-navy mb-6">필수 요건</h3>
               <div className="pl-6 border-l-4 border-sky-500 space-y-4">
                 <p className="text-lg text-charcoal">• Python 기초 문법 이해</p>
-                <p className="text-lg text-charcoal">• Git을 활용한 프로젝트 협업 경험</p>
                 <p className="text-lg text-charcoal">• AI/IT 분야에 대한 열정과 학습 의지</p>
+                <p className="text-lg text-charcoal">• 매주 월요일 19:00-22:00 정규 세션 필참 가능</p>
+                <p className="text-lg text-charcoal">• 전후반기 팀 프로젝트 성실 참여 가능</p>
               </div>
             </div>
             <div className="bg-white rounded-2xl p-10 shadow-xl border border-gray-100">

@@ -7,102 +7,174 @@ export default function WhyPage() {
         <div className="relative z-10 max-w-4xl mx-auto">
           <h1 className="text-6xl font-extrabold text-white mb-8 animate-slideUp">Why CREAI+IT</h1>
           <p className="text-xl text-white/90 leading-relaxed animate-slideUp delay-100">
-            AI/IT 분야의 단순한 학습을 넘어,<br />
-            실전 경험과 전문가 네트워크를 통해<br />
-            여러분의 혁신적인 아이디어를 시장의 가치로 만들어냅니다.
+            LLM 중심의 Generative AI가 만들어내는 격변의 시대,<br />
+            기술적 역량과 사업적 역량을 결합하여<br />
+            실질적인 가치를 창출하는 실천형 학회입니다.
           </p>
         </div>
       </div>
 
       <div className="max-w-6xl mx-auto px-6 py-24 space-y-24">
         <section className="animate-slideUp">
-          <h2 className="text-4xl font-bold gradient-text mb-12">기존 학습 모델의 한계</h2>
+          <h2 className="text-4xl font-bold gradient-text mb-12">변화의 속도, 변화의 기회</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
-              <div className="w-12 h-12 bg-red-100 rounded-xl mb-6 flex items-center justify-center">
-                <span className="text-2xl text-red-600">×</span>
+              <div className="w-12 h-12 bg-sky-100 rounded-xl mb-6 flex items-center justify-center">
+                <span className="text-2xl text-sky-600">1</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">단편적 이론 학습</h3>
-              <p className="text-gray-600">
-                이론 자체는 훌륭하지만, 실제 프로젝트로 이어지기 어려운 학습 구조
-              </p>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">급격한 기술 발전</h3>
+              <div className="space-y-3">
+                <p className="text-gray-600">
+                  GPT-4 공개 이후, 불과 몇 개월 만에 산업 현장 곳곳이 변화했습니다.
+                </p>
+                <p className="text-gray-600">
+                  이 변화는 멈추지 않고 있으며, 그 속도는 더욱 가속화되고 있습니다.
+                </p>
+              </div>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
-              <div className="w-12 h-12 bg-red-100 rounded-xl mb-6 flex items-center justify-center">
-                <span className="text-2xl text-red-600">×</span>
+              <div className="w-12 h-12 bg-sky-100 rounded-xl mb-6 flex items-center justify-center">
+                <span className="text-2xl text-sky-600">2</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">최신 트렌드 부재</h3>
-              <p className="text-gray-600">
-                매일 새로워지는 AI/IT 기술을 혼자서는 따라가기 벅찬 현실
-              </p>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">진지한 접근</h3>
+              <div className="space-y-3">
+                <p className="text-gray-600">
+                  대부분의 단체가 단편적 관심에 그치는 반면, 우리는 이 변화를 진지하게 받아들입니다.
+                </p>
+                <p className="text-gray-600">
+                  동일한 기술도, 활용 방식에 따라 전혀 다른 성과가 나올 수 있습니다.
+                </p>
+              </div>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
-              <div className="w-12 h-12 bg-red-100 rounded-xl mb-6 flex items-center justify-center">
-                <span className="text-2xl text-red-600">×</span>
+              <div className="w-12 h-12 bg-sky-100 rounded-xl mb-6 flex items-center justify-center">
+                <span className="text-2xl text-sky-600">3</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">비즈니스 관점 결여</h3>
-              <p className="text-gray-600">
-                기술과 시장을 연결해줄 조력자 없이는 사업화 단계에서 난관에 봉착
-              </p>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">실천적 접근</h3>
+              <div className="space-y-3">
+                <p className="text-gray-600">
+                  Generative AI를 기반으로 한 Edge Tech를 비즈니스적 가치 창출로 연결합니다.
+                </p>
+                <p className="text-gray-600">
+                  체계적인 학습과 실전 프로젝트를 통해 실질적 역량을 키웁니다.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
         <section className="animate-slideUp">
-          <h2 className="text-4xl font-bold gradient-text mb-12">CREAI+IT의 차별화된 솔루션</h2>
+          <h2 className="text-4xl font-bold gradient-text mb-12">핵심 가치의 실천</h2>
           <div className="space-y-8">
             <div className="bg-white rounded-2xl p-10 shadow-xl border border-gray-100">
-              <h3 className="text-2xl font-bold text-navy mb-6">현업 전문가와의 직결 세션</h3>
-              <div className="pl-6 border-l-4 border-sky-500 space-y-4">
-                <p className="text-lg text-charcoal">
-                  • AI 엔지니어, MLOps 전문가, 스타트업 창업가 등 실무자의 직접 멘토링
-                </p>
-                <p className="text-lg text-charcoal">
-                  • Neo4j, LangChain, Langfuse, OpenAI API 등 최신 AI 스택 실습
-                </p>
-                <p className="text-lg text-charcoal">
-                  • 격주 워크샵을 통한 실시간 기술 트렌드 캐치업
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-10 shadow-xl border border-gray-100">
-              <h3 className="text-2xl font-bold text-navy mb-6">AI + 창업 융합 커리큘럼</h3>
+              <h3 className="text-2xl font-bold text-navy mb-6">Edge Tech</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="pl-6 border-l-4 border-sky-500">
-                  <h4 className="text-xl font-semibold mb-4">전반기: AI 기술 역량 강화</h4>
-                  <ul className="space-y-2 text-charcoal">
-                    <li>• LLM 아키텍처 심화 학습</li>
-                    <li>• MLOps 파이프라인 구축</li>
-                    <li>• Knowledge Graph 실전 적용</li>
+                  <h4 className="text-xl font-semibold mb-4">최신 기술 실습</h4>
+                  <ul className="space-y-3 text-charcoal">
+                    <li>• GPT-4, LangChain, Neo4j 등 최신 스택 학습</li>
+                    <li>• LLMOps 아키텍처 설계 및 구현</li>
+                    <li>• Langfuse 기반 모델 모니터링</li>
                   </ul>
                 </div>
                 <div className="pl-6 border-l-4 border-sky-500">
-                  <h4 className="text-xl font-semibold mb-4">후반기: 창업 실무 집중</h4>
-                  <ul className="space-y-2 text-charcoal">
-                    <li>• Lean Startup 방법론</li>
-                    <li>• MVP 개발 및 시장 검증</li>
-                    <li>• 투자자 피드백 및 피칭</li>
+                  <h4 className="text-xl font-semibold mb-4">트렌드 추적</h4>
+                  <ul className="space-y-3 text-charcoal">
+                    <li>• 산업 현장의 최신 도구 실습</li>
+                    <li>• 기술 트렌드 상시 모니터링</li>
+                    <li>• 새로운 기회 선제적 발굴</li>
                   </ul>
                 </div>
               </div>
             </div>
 
             <div className="bg-white rounded-2xl p-10 shadow-xl border border-gray-100">
-              <h3 className="text-2xl font-bold text-navy mb-6">강력한 네트워크 & 피드백 루프</h3>
-              <div className="pl-6 border-l-4 border-sky-500 space-y-4">
-                <p className="text-lg text-charcoal">
-                  • 학회원 간 지속적인 프로젝트 협업 및 피드백
-                </p>
-                <p className="text-lg text-charcoal">
-                  • VC, 액셀러레이터와의 정기적인 교류 세션
-                </p>
-                <p className="text-lg text-charcoal">
-                  • 기업·투자·기술 전분야 커버하는 인적 네트워크 구축
-                </p>
+              <h3 className="text-2xl font-bold text-navy mb-6">Sensitivity</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="pl-6 border-l-4 border-sky-500">
+                  <h4 className="text-xl font-semibold mb-4">시장 가치 발굴</h4>
+                  <ul className="space-y-3 text-charcoal">
+                    <li>• 고객/사용자 관점의 인사이트 도출</li>
+                    <li>• 린스타트업 방법론 실천</li>
+                    <li>• MVP 테스트 및 피드백 수렴</li>
+                  </ul>
+                </div>
+                <div className="pl-6 border-l-4 border-sky-500">
+                  <h4 className="text-xl font-semibold mb-4">통합적 사고</h4>
+                  <ul className="space-y-3 text-charcoal">
+                    <li>• 기술과 비즈니스의 결합</li>
+                    <li>• 문제 발견과 해결책 도출</li>
+                    <li>• 가치 창출 감각 체화</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl p-10 shadow-xl border border-gray-100">
+              <h3 className="text-2xl font-bold text-navy mb-6">Value Creation</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="pl-6 border-l-4 border-sky-500">
+                  <h4 className="text-xl font-semibold mb-4">Zero to One</h4>
+                  <p className="text-charcoal">
+                    아이디어 발굴부터 시장 검증까지, 실제 창업 프로세스를 경험합니다.
+                  </p>
+                </div>
+                <div className="pl-6 border-l-4 border-sky-500">
+                  <h4 className="text-xl font-semibold mb-4">실전 프로젝트</h4>
+                  <p className="text-charcoal">
+                    팀 프로젝트와 외부 피드백을 통해 아이디어를 현실화합니다.
+                  </p>
+                </div>
+                <div className="pl-6 border-l-4 border-sky-500">
+                  <h4 className="text-xl font-semibold mb-4">지속적 성장</h4>
+                  <p className="text-charcoal">
+                    창업 경진대회, 투자 유치 등 실질적 성과로 이어집니다.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+        </section>
+
+        <section className="animate-slideUp">
+          <h2 className="text-4xl font-bold gradient-text mb-12">독보적 성과와 활동</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
+              <div className="w-12 h-12 bg-sky-100 rounded-xl mb-6 flex items-center justify-center">
+                <span className="text-2xl text-sky-600">24-1기</span>
+              </div>
+              <ul className="space-y-3 text-gray-600">
+                <li>• 총 1,500만원 상당의 지원금 확보</li>
+                <li>• VC, Engineer, CEO 등 5회의 연사 초청</li>
+                <li>• 3개 팀 창업 활동 진행 중</li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
+              <div className="w-12 h-12 bg-sky-100 rounded-xl mb-6 flex items-center justify-center">
+                <span className="text-2xl text-sky-600">24-2기</span>
+              </div>
+              <ul className="space-y-3 text-gray-600">
+                <li>• 왕중왕전 창업경진대회 수상</li>
+                <li>• 2개 팀 시드 투자 검토 단계</li>
+                <li>• Y-Ventures와의 전략적 파트너십 구축</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="animate-slideUp text-center">
+          <h2 className="text-4xl font-bold gradient-text mb-8">Join CREAI+IT</h2>
+          <p className="text-xl text-gray-700 mb-12 max-w-3xl mx-auto">
+            혼자서는 얻기 어려운 귀중한 경험,<br />
+            함께라면 LLM과 Generative AI의 무한한 가능성을<br />
+            실질적 가치로 바꿔낼 수 있습니다.
+          </p>
+          <a
+            href="/join"
+            className="inline-block bg-navy hover:bg-sky-900 text-white font-bold py-4 px-8 rounded-xl transition-colors"
+          >
+            지원하기
+          </a>
         </section>
       </div>
     </div>

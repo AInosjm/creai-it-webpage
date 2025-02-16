@@ -83,7 +83,6 @@ export default function NetworkPage() {
                   <ul className="space-y-2 text-charcoal">
                     <li>• AI 대기업 수석 엔지니어</li>
                     <li>• MLOps 전문가</li>
-                    <li>• AI 보안 전문가</li>
                   </ul>
                 </div>
                 <div className="pl-6 border-l-4 border-sky-500">
@@ -101,7 +100,10 @@ export default function NetworkPage() {
               <h3 className="text-2xl font-bold text-navy mb-6">Strategic Partnerships</h3>
               <div className="pl-6 border-l-4 border-sky-500 space-y-4">
                 <p className="text-lg text-charcoal">
-                  • 국내외 주요 액셀러레이터와 협력 MOU
+                  • Y-Venture와의 협업
+                </p>
+                <p className="text-lg text-charcoal">
+                  • Disqueit 등의 커뮤니티와 파트너쉽
                 </p>
                 <p className="text-lg text-charcoal">
                   • AWS Activate, GCP for Startups 등 클라우드 크레딧 지원

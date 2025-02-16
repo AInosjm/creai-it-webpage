@@ -7,8 +7,8 @@ export default function ActivitiesPage() {
         <div className="relative z-10 max-w-4xl mx-auto">
           <h1 className="text-6xl font-extrabold text-white mb-8 animate-fadeInUp">What We Do</h1>
           <p className="text-xl text-white/90 leading-relaxed animate-fadeInUp delay-100">
-            AI 기술 전문성과 창업 역량을 동시에 개발하는<br />
-            체계적인 16주 프로그램을 운영합니다.
+            Generative AI와 Agentic System을 깊이 이해하고<br />
+            실제 가치 창출로 연결하는 16주 커리큘럼을 제공합니다.
           </p>
         </div>
       </div>
@@ -17,44 +17,45 @@ export default function ActivitiesPage() {
         {/* 전반기 섹션 */}
         <section className="animate-fadeInUp">
           <div className="flex items-center space-x-4 mb-12">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-sky-500 to-blue-600 flex items-center justify-center text-white font-bold">1</div>
-            <h2 className="text-4xl font-bold gradient-text">전반기: AI Implementation Project</h2>
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-sky-500 to-blue-600 flex items-center justify-center text-black font-bold">1</div>
+            <h2 className="text-4xl font-bold gradient-text">전반기: Agents & AI Implementation</h2>
           </div>
           
           <div className="bg-white rounded-2xl p-12 shadow-xl border border-gray-100">
             <div className="space-y-12">
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">AI Session (Week 1-4)</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Agents: LLM 기반의 자율적 시스템</h3>
                 <div className="pl-6 border-l-4 border-sky-500 space-y-8">
                   <div>
-                    <h4 className="text-xl font-semibold text-gray-800 mb-3">Core Technologies</h4>
+                    <h4 className="text-xl font-semibold text-gray-800 mb-3">Agent 기본 개념 & 사례</h4>
                     <ul className="space-y-3 text-lg text-gray-600">
-                      <li>• LLM 내부 메커니즘 이해 및 파인튜닝 실습</li>
-                      <li>• LangChain: 프롬프트 체이닝, 에이전트 설계, DB 연동</li>
-                      <li>• Neo4j: 그래프DB 기반 지식 그래프 구축</li>
-                      <li>• Langfuse: LLM 모니터링, 로깅, 비용 최적화</li>
+                      <li>• Workflows vs. Agents: 자율적 시스템 설계 원리</li>
+                      <li>• LLM 기반 Tool-using Agent 아키텍처 이해</li>
+                      <li>• Prompt Chaining, Routing, Parallelization 패턴</li>
+                      <li>• Orchestrator-Workers, Evaluator-Optimizer 구조</li>
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-xl font-semibold text-gray-800 mb-3">Weekly Team Projects</h4>
+                    <h4 className="text-xl font-semibold text-gray-800 mb-3">실무 적용 사례 연구</h4>
                     <ul className="space-y-3 text-lg text-gray-600">
-                      <li>• 챗봇 기능 확장 및 고도화</li>
-                      <li>• QA 파이프라인 설계 및 구현</li>
-                      <li>• 실시간 현업 엔지니어 코드 리뷰</li>
+                      <li>• 고객지원 Agent: Knowledge Base + API 연동</li>
+                      <li>• 코딩 Agent: 자동 이슈 해결 & 테스트 루프</li>
+                      <li>• 검색/크롤링 Agent: 정보 수집 & 가공 자동화</li>
                     </ul>
                   </div>
                 </div>
               </div>
               
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Implementation Project (Week 5-8)</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">AI Implementation Project</h3>
                 <div className="pl-6 border-l-4 border-sky-500 space-y-8">
                   <div>
-                    <h4 className="text-xl font-semibold text-gray-800 mb-3">PoC Development</h4>
+                    <h4 className="text-xl font-semibold text-gray-800 mb-3">Augmented LLM 실습</h4>
                     <ul className="space-y-3 text-lg text-gray-600">
-                      <li>• Neo4j 기반 지능형 FAQ 시스템 구축</li>
-                      <li>• LangChain 활용 문서 분석 파이프라인 개발</li>
-                      <li>• 실시간 피드백 및 성능 최적화</li>
+                      <li>• Model Context Protocol & LangChain 활용</li>
+                      <li>• Neo4j 기반 Knowledge Graph 구축</li>
+                      <li>• Langfuse로 LLM 모니터링 & 최적화</li>
+                      <li>• 현업 AI 엔지니어의 실시간 코드 리뷰</li>
                     </ul>
                   </div>
                 </div>
@@ -66,36 +67,37 @@ export default function ActivitiesPage() {
         {/* 후반기 섹션 */}
         <section className="animate-fadeInUp">
           <div className="flex items-center space-x-4 mb-12">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-sky-500 to-blue-600 flex items-center justify-center text-white font-bold">2</div>
-            <h2 className="text-4xl font-bold gradient-text">후반기: Zero to One Project</h2>
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-sky-500 to-blue-600 flex items-center justify-center text-black font-bold">2</div>
+            <h2 className="text-4xl font-bold gradient-text">후반기: Lean Startup & Zero to One</h2>
           </div>
 
           <div className="bg-white rounded-2xl p-12 shadow-xl border border-gray-100">
             <div className="space-y-12">
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Startup Session (Week 9-12)</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Lean Startup 접근</h3>
                 <div className="pl-6 border-l-4 border-sky-500 space-y-8">
                   <div>
-                    <h4 className="text-xl font-semibold text-gray-800 mb-3">Startup Fundamentals</h4>
+                    <h4 className="text-xl font-semibold text-gray-800 mb-3">핵심 이론 & 실습</h4>
                     <ul className="space-y-3 text-lg text-gray-600">
                       <li>• Pretotyping & 가설 기반 개발 방법론</li>
-                      <li>• Lean Startup: Build-Measure-Learn 실습</li>
-                      <li>• 시장 검증 및 고객 개발 프로세스</li>
-                      <li>• IR 덱 작성 및 Elevator Pitch 기법</li>
+                      <li>• Build-Measure-Learn 피드백 루프</li>
+                      <li>• 고객 개발론 & 시장 검증 프로세스</li>
+                      <li>• Agent 기술의 비즈니스 모델 설계</li>
                     </ul>
                   </div>
                 </div>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Zero to One Project (Week 13-16)</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Zero to One Project</h3>
                 <div className="pl-6 border-l-4 border-sky-500 space-y-8">
                   <div>
-                    <h4 className="text-xl font-semibold text-gray-800 mb-3">MVP Launch</h4>
+                    <h4 className="text-xl font-semibold text-gray-800 mb-3">MVP 개발 & 시장 검증</h4>
                     <ul className="space-y-3 text-lg text-gray-600">
-                      <li>• AI 기술 기반 실제 서비스 개발</li>
-                      <li>• 사용자 테스트 및 핵심 지표 분석</li>
-                      <li>• VC/엑셀러레이터 대상 Demo Day</li>
+                      <li>• Agentic System의 실제 서비스화</li>
+                      <li>• 사용자 피드백 기반 반복 개선</li>
+                      <li>• VC/액셀러레이터 대상 Demo Day</li>
+                      <li>• IR Deck 작성 & 투자 유치 전략</li>
                     </ul>
                   </div>
                 </div>
@@ -112,22 +114,22 @@ export default function ActivitiesPage() {
               <div className="w-16 h-16 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl mx-auto mb-6 flex items-center justify-center">
                 {/* Icon */}
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Internal Hackathon</h3>
-              <p className="text-gray-600">24-48시간 집중 개발을 통한 빠른 프로토타입 제작</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">정기 특강 & 네트워킹</h3>
+              <p className="text-gray-600">AI 대기업 엔지니어, 투자자, 스타트업 CEO와의 실무 교류</p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100">
               <div className="w-16 h-16 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl mx-auto mb-6 flex items-center justify-center">
                 {/* Icon */}
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Expert Sessions</h3>
-              <p className="text-gray-600">AI 대기업 엔지니어 및 스타트업 CEO 특강</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">지원금 & 파트너십</h3>
+              <p className="text-gray-600">1,500만원 상당 지원금 및 클라우드 크레딧 제공</p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100">
               <div className="w-16 h-16 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl mx-auto mb-6 flex items-center justify-center">
                 {/* Icon */}
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Study Groups</h3>
-              <p className="text-gray-600">LLM 보안, MLOps 등 심화 주제 연구</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Alumni 커뮤니티</h3>
+              <p className="text-gray-600">수료 후에도 지속되는 네트워크 & 성장 지원</p>
             </div>
           </div>
         </section>
