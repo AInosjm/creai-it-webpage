@@ -30,6 +30,9 @@ export default function WhyPage() {
                 <p className="text-gray-600">
                   이 변화는 멈추지 않고 있으며, 그 속도는 더욱 가속화되고 있습니다.
                 </p>
+                <p className="text-gray-600">
+                  최근에는 o-series (reasoning model) 또한 공개되며 다시 한번 발전의 속도가 재점화되고 있습니다.
+                </p>
               </div>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
@@ -39,10 +42,13 @@ export default function WhyPage() {
               <h3 className="text-xl font-bold text-gray-900 mb-4">진지한 접근</h3>
               <div className="space-y-3">
                 <p className="text-gray-600">
-                  대부분의 단체가 단편적 관심에 그치는 반면, 우리는 이 변화를 진지하게 받아들입니다.
+                  대부분의 단체 혹은 개인이 LLM에 대한 단편적 관심에 그치는 반면, 우리는 이 변화를 진지하게 받아들입니다.
                 </p>
                 <p className="text-gray-600">
-                  동일한 기술도, 활용 방식에 따라 전혀 다른 성과가 나올 수 있습니다.
+                  동일한 기술도, 활용 방식에 따라 전혀 다른 성과가 나올 수 있습니다. 또한, 이 변화는 이전의 블록체인 같은 기술처럼 반짝할 기술이 아닌, 세상을 바꾸는 기술 입니다.
+                </p>
+                <p className="text-gray-600">
+                  꼭 창업을 하지 않더라도, LLM Native가 되는 것은 누구에게나 필요하며 중요합니다.
                 </p>
               </div>
             </div>
@@ -50,13 +56,16 @@ export default function WhyPage() {
               <div className="w-12 h-12 bg-sky-100 rounded-xl mb-6 flex items-center justify-center">
                 <span className="text-2xl text-sky-600">3</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">실천적 접근</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">실질적 접근</h3>
               <div className="space-y-3">
                 <p className="text-gray-600">
-                  Generative AI를 기반으로 한 Edge Tech를 비즈니스적 가치 창출로 연결합니다.
+                  LLM을 단순히 프롬프팅 하는 것에서 그치지 않습니다.
                 </p>
                 <p className="text-gray-600">
-                  체계적인 학습과 실전 프로젝트를 통해 실질적 역량을 키웁니다.
+                  LLM System을 어떻게 구현할지를 고민하고, 실제로 구현하는 경험을 제공합니다. 
+                </p>
+                <p className="text-gray-600">
+                  단순 구현에서 나아가, 실제 시장에서 LLM이 어떤 가치를 창출할 수 있는지 고민하며 실제 BM 설계 및 프로덕트를 개발하는 경험을 제시합니다. 
                 </p>
               </div>
             </div>
@@ -72,7 +81,7 @@ export default function WhyPage() {
                 <div className="pl-6 border-l-4 border-sky-500">
                   <h4 className="text-xl font-semibold mb-4">최신 기술 실습</h4>
                   <ul className="space-y-3 text-charcoal">
-                    <li>• GPT-4, LangChain, Neo4j 등 최신 스택 학습</li>
+                    <li>• OpenAI API, LangChain, Llamaindex 등 최신 스택 학습</li>
                     <li>• LLMOps 아키텍처 설계 및 구현</li>
                     <li>• Langfuse 기반 모델 모니터링</li>
                   </ul>

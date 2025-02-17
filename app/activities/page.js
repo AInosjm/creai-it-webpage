@@ -55,7 +55,7 @@ export default function ActivitiesPage() {
                       <li>• Model Context Protocol & LangChain 활용</li>
                       <li>• Neo4j 기반 Knowledge Graph 구축</li>
                       <li>• Langfuse로 LLM 모니터링 & 최적화</li>
-                      <li>• 현업 AI 엔지니어의 실시간 코드 리뷰</li>
+                      <li>• 배운 개념 기반 Agentic System 구현</li>
                     </ul>
                   </div>
                 </div>

@@ -12,7 +12,7 @@ export default function Header() {
           <span className="text-2xl font-bold text-navy">CREAI+IT</span>
         </Link>
         <nav className="hidden md:flex space-x-8">
-          {["about", "why", "activities", "vision", "join", "network"].map((page) => (
+          {["about", "why", "activities", "vision", "join", "network", "faq"].map((page) => (
             <Link
               key={page}
               href={`/${page}`}
@@ -23,7 +23,8 @@ export default function Header() {
               page === "activities" ? "What We Do" :
               page === "vision" ? "Our Vision" :
               page === "join" ? "Join" :
-              page === "network" ? "Network" : page}
+              page === "network" ? "Network" :
+              page === "faq" ? "FAQ" : page}
             </Link>
           ))}
         </nav>

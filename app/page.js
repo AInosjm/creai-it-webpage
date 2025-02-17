@@ -38,6 +38,12 @@ export default function HomePage() {
               더 알아보기
             </a>
           </div>
+          <a
+            href="/faq"
+            className="mt-8 text-white/80 hover:text-white underline text-lg animate-slideUp delay-400 transition-colors"
+          >
+            인공지능을 잘 몰라도 따라갈 수 있을까요?
+          </a>
         </div>
       </div>
 
