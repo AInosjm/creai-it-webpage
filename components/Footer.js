@@ -26,6 +26,16 @@ export default function Footer() {
                   yonsei.creaiit@gmail.com
                 </a>
               </li>
+              <li>
+                <a href="http://pf.kakao.com/_IEQbn" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-sky-400 transition-colors text-sm sm:text-base">
+                  카카오톡 채널
+                </a>
+              </li>
+              <li>
+                <a href="https://instagram.com/yonsei_creai_it" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-sky-400 transition-colors text-sm sm:text-base">
+                  @yonsei_creai_it
+                </a>
+              </li>
               <li className="text-gray-400 text-sm sm:text-base">서울특별시 서대문구 연세로 50</li>
             </ul>
           </div>
