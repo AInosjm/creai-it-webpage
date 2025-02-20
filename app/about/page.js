@@ -14,22 +14,34 @@ export default function AboutPage() {
       </div>
 
       <div className="max-w-6xl mx-auto px-6 py-24 space-y-24">
-        <section className="animate-slideUp">
-          <h2 className="text-4xl font-bold gradient-text mb-8">Our Story</h2>
-          <div className="text-xl text-gray-700 leading-relaxed space-y-6">
-            <p>
-              GPT-4가 세상에 공개된 이후, 기술 발전의 속도는 상상을 초월하고 있습니다.
-              기존의 시스템과 업계 판도가 단 몇 개월 만에 바뀌는 모습이 곳곳에서 포착되고 있습니다.
-            </p>
-            <p>
-              하지만 이런 변화를 진지하게 받아들이고 구체적 행동으로 옮기려는 단체는 많지 않았습니다. 대부분이 가벼운 관심을 가지는 정도에서 그쳤죠.
-              CREAI+IT는 바로 이 지점에서 시작되었습니다.
-            </p>
-            <p>
-              "세상의 변화에 적응하고, 가장 최신의 기술을 이해하며,<br />
-              이를 레버리지해 가치를 만들어내는 인재를 육성하는 것"<br />
-              이것이 우리가 창립 초기부터 한결같이 지켜온 미션입니다.
-            </p>
+        <section className="animate-slideUp relative bg-gradient-to-br from-white to-sky-50 rounded-3xl p-12 shadow-xl border border-sky-100/50">
+          <div className="absolute inset-0 bg-grid-sky/[0.03] bg-[size:20px_20px] rounded-3xl" />
+          <div className="relative">
+            <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-12 flex items-center">
+              <span className="bg-sky-500/10 rounded-full p-3 mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </span>
+              Our Story
+            </h2>
+            <div className="text-xl text-gray-700 leading-relaxed space-y-8">
+              <p className="bg-white/50 backdrop-blur rounded-xl p-6 shadow-sm border border-sky-50 hover:shadow-md transition-shadow">
+                GPT-4가 세상에 공개된 이후, 기술 발전의 속도는 상상을 초월하고 있습니다.
+                기존의 시스템과 업계 판도가 단 몇 개월 만에 바뀌는 모습이 곳곳에서 포착되고 있습니다.
+              </p>
+              <p className="bg-white/50 backdrop-blur rounded-xl p-6 shadow-sm border border-sky-50 hover:shadow-md transition-shadow">
+                하지만 이런 변화를 진지하게 받아들이고 구체적 행동으로 옮기려는 단체는 많지 않았습니다. 대부분이 가벼운 관심을 가지는 정도에서 그쳤죠. 우리는 이런 변화를 진지하게 받아들이고 구체적 행동으로 옮기려고 합니다. <br />
+                그렇게 <strong>CREAI+IT</strong>가 탄생했습니다.
+              </p>
+              <div className="bg-gradient-to-r from-sky-500/10 to-indigo-500/10 rounded-xl p-8 shadow-sm border border-sky-100 hover:shadow-md transition-shadow">
+                <p className="text-2xl font-bold text-gray-800 text-center italic">
+                  "세상의 변화에 적응하고, 가장 최신의 기술을 이해하며,<br />
+                  이를 레버리지해 가치를 만들어내는 인재를 육성하는 것"<br />
+                  <span className="text-lg mt-4 block text-gray-600">이것이 우리가 창립 초기부터 한결같이 지켜온 미션입니다.</span>
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -37,24 +49,24 @@ export default function AboutPage() {
           <h2 className="text-4xl font-bold gradient-text mb-12">Our Philosophy</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition border border-gray-100">
-              <h3 className="text-2xl font-semibold text-navy mb-4">Edge Tech</h3>
+              <h3 className="text-2xl font-semibold text-navy mb-4">Quick Adaptation</h3>
               <p className="text-lg text-charcoal leading-relaxed">
-                오늘의 최첨단이 내일의 구식이 될 수 있습니다. 우리는 항상 가장 최신의 기술을 학습하고,
-                그 흐름을 지속적으로 추적함으로써 남들보다 한 발 앞서나가는 실전 경험을 제공합니다.
+              오늘의 최첨단은 내일의 구식입니다. 하루에도 수백 개의 모델 논문 프로덕트가 쏟아지고, 기획된 서비스가 하루 아침에 백지화가 되곤 합니다. <br/><br/>
+              우린 그 빠른 흐름을 지속적으로 학습하고 추적하여 남들보다 한 발 앞서 나가는 경험을 만들어 나갑니다. 
               </p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition border border-gray-100">
               <h3 className="text-2xl font-semibold text-navy mb-4">Sensitivity</h3>
               <p className="text-lg text-charcoal leading-relaxed">
-                변화를 읽지 못하면, 아무리 좋은 기술도 빛을 보지 못합니다.
-                우리는 LLM 등 최신 AI 지식뿐 아니라, 시장 동향과 사용자 니즈를 관찰·분석하는 감각을 키웁니다.
+              변화를 읽지 못하면, 아무리 좋은 기술도 무용지물입니다. 우리는 최신 AI 지식 뿐 아니라, 시장 동향과 사용자 니즈를 관찰·분석하는 감각을 키웁니다. <br/><br/>
+              남들보다 빠르고 예민하게 변화를 읽고 따라가며 다음의 변화를 만들어 나갑니다.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition border border-gray-100">
               <h3 className="text-2xl font-semibold text-navy mb-4">Value Creation</h3>
               <p className="text-lg text-charcoal leading-relaxed">
-                린스타트업 방법론을 기반으로 "아이디어 → MVP → 시장 피드백 → 개선"의 과정을 직접 수행합니다.
-                이 과정에서 쌓인 경험은 언젠가 커다란 성장을 가져다줄 자양분이 됩니다.
+              Lean StartUp 방법론을 기반으로 아이디어를 빠르게 검증하고 실패하기를 반복해 나가는 과정을 직접 수행합니다. 이 과정에서 쌓인 경험은 커다란 성장을 가져다줄 자양분이 될 것입니다. <br/><br/>
+              우리는 그 경험을 바탕으로 더 나은 아이디어를 만들어 나가고, 그 아이디어를 실현시키며 가치를 창출합니다. 
               </p>
             </div>
           </div>
