@@ -166,6 +166,21 @@ export default function FAQPage() {
               </div>
             </div>
           </div>
+
+          <div className="mt-12 text-center">
+            <p className="text-gray-600 mb-6">더 궁금한 점이 있으신가요?</p>
+            <a
+              href="http://pf.kakao.com/_IEQbn"
+              target="_blank"
+              rel="noopener noreferrer" 
+              className="inline-flex items-center px-8 py-3 text-lg font-semibold text-white bg-[#FEE500] rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+            >
+              <svg className="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 3C6.48 3 2 6.48 2 12c0 5.52 4.48 10 10 10s10-4.48 10-10c0-5.52-4.48-10-10-10zm0 18c-4.41 0-8-3.59-8-8 0-4.41 3.59-8 8-8s8 3.59 8 8c0 4.41-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+              </svg>
+              카카오톡으로 문의하기
+            </a>
+          </div>
         </div>
       </div>
     </div>
