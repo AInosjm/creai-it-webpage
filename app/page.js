@@ -1,4 +1,5 @@
 // app/page.js
+import Link from "next/link";
 import Image from "next/image";
 import heroBg from "../public/background_V4.jpg";
 
@@ -98,8 +99,8 @@ export default function HomePage() {
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-lg border border-sky-100/50 hover:shadow-xl transition-all duration-300">
                 <div className="flex flex-col md:flex-row md:items-start gap-4 md:space-x-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-full flex items-center justify-center mx-auto md:mx-0">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    <svg className="w-6 h-6 text-white/90" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                   </div>
                   <div>
@@ -114,8 +115,8 @@ export default function HomePage() {
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-lg border border-sky-100/50 hover:shadow-xl transition-all duration-300">
                 <div className="flex flex-col md:flex-row md:items-start gap-4 md:space-x-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-full flex items-center justify-center mx-auto md:mx-0">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                    <svg className="w-6 h-6 text-white/90" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                     </svg>
                   </div>
                   <div>
@@ -130,8 +131,8 @@ export default function HomePage() {
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-lg border border-sky-100/50 hover:shadow-xl transition-all duration-300">
                 <div className="flex flex-col md:flex-row md:items-start gap-4 md:space-x-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-full flex items-center justify-center mx-auto md:mx-0">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+                    <svg className="w-6 h-6 text-white/90" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
                     </svg>
                   </div>
                   <div>
@@ -142,16 +143,25 @@ export default function HomePage() {
                   </div>
                 </div>
               </div>
+            </div>
 
               <div className="mt-8 md:mt-12 text-center px-4">
                 <p className="text-lg md:text-xl text-gray-600 font-medium">
                   "GPT가 탄생한 지 3년이 지난 지금, 우리에게 네이버, 카카오, 배달의민족처럼 당연한 AI 기반 서비스가 존재하나요? 우리는 그 빈자리를 채울 혁신을 만들어가고자 합니다."
                 </p>
               </div>
+
+              <div className="mt-12 text-center">
+                <Link 
+                  href="/about"
+                  className="inline-block px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-navy to-blue-600 rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+                >
+                  더 알아보기
+                </Link>
               </div>
             </div>
+          </div>
         </div>
-      </div>
     </section>
   );
 }
