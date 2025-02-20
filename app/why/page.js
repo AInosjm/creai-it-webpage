@@ -146,11 +146,11 @@ export default function WhyPage() {
         </section>
 
         <section className="animate-slideUp">
-          <h2 className="text-4xl font-bold gradient-text mb-12">독보적 성과와 활동</h2>
+          <h2 className="text-4xl font-bold gradient-text mb-12">성과와 활동</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
               <div className="w-12 h-12 bg-sky-100 rounded-xl mb-6 flex items-center justify-center">
-                <span className="text-2xl text-sky-600">24-1기</span>
+                <span className="text-2xl text-sky-600">1기</span>
               </div>
               <ul className="space-y-3 text-gray-600">
                 <li>• 총 1,500만원 상당의 지원금 확보</li>
@@ -160,7 +160,7 @@ export default function WhyPage() {
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
               <div className="w-12 h-12 bg-sky-100 rounded-xl mb-6 flex items-center justify-center">
-                <span className="text-2xl text-sky-600">24-2기</span>
+                <span className="text-2xl text-sky-600">2기</span>
               </div>
               <ul className="space-y-3 text-gray-600">
                 <li>• 왕중왕전 창업경진대회 수상</li>

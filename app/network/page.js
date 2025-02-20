@@ -5,8 +5,8 @@ export default function NetworkPage() {
       <div className="relative bg-gradient-to-r from-navy to-sky-900 py-32 px-6 text-center overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:60px_60px]" />
         <div className="relative z-10 max-w-4xl mx-auto">
-          <h1 className="text-6xl font-extrabold text-white mb-8 animate-slideUp">Our Network</h1>
-          <p className="text-xl text-white/90 leading-relaxed animate-slideUp delay-100">
+          <h1 className="text-6xl font-extrabold text-white mb-8 animate-fadeInUp">Our Network</h1>
+          <p className="text-xl text-white/90 leading-relaxed animate-fadeInUp delay-100">
             CREAI+IT는 내부 커뮤니티의 긴밀한 협력과<br />
             글로벌 AI·스타트업 생태계와의 연결을 통해<br />
             여러분의 혁신을 현실로 만들어갑니다.
@@ -14,13 +14,12 @@ export default function NetworkPage() {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 py-24 space-y-24">
-        <section className="animate-slideUp">
-          <h2 className="text-4xl font-bold gradient-text mb-12">Internal Networking</h2>
+      <div className="max-w-6xl mx-auto px-6 py-12 space-y-12">
+        <section className="animate-fadeInUp">
+          <h2 className="text-4xl font-bold gradient-text mb-8 text-center">Internal Networking</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100">
-              <div className="w-16 h-16 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl mb-8 flex items-center justify-center">
-                {/* Icon */}
+            <div className="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 transform hover:-translate-y-2">
+              <div className="w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl mb-4 flex items-center justify-center">
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">정기 스터디 그룹</h3>
               <ul className="space-y-3 text-gray-600">
@@ -30,9 +29,8 @@ export default function NetworkPage() {
                 <li>• MLOps Best Practices</li>
               </ul>
             </div>
-            <div className="bg-white rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100">
-              <div className="w-16 h-16 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl mb-8 flex items-center justify-center">
-                {/* Icon */}
+            <div className="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 transform hover:-translate-y-2">
+              <div className="w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl mb-4 flex items-center justify-center">
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">프로젝트 발표회</h3>
               <ul className="space-y-3 text-gray-600">
@@ -42,9 +40,8 @@ export default function NetworkPage() {
                 <li>• 아이디어 발전 워크샵</li>
               </ul>
             </div>
-            <div className="bg-white rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100">
-              <div className="w-16 h-16 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl mb-8 flex items-center justify-center">
-                {/* Icon */}
+            <div className="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 transform hover:-translate-y-2">
+              <div className="w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl mb-4 flex items-center justify-center">
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">해커톤 & 아이디어톤</h3>
               <ul className="space-y-3 text-gray-600">
@@ -57,14 +54,14 @@ export default function NetworkPage() {
           </div>
         </section>
 
-        <section className="animate-slideUp">
-          <h2 className="text-4xl font-bold gradient-text mb-12">External Networking</h2>
+        <section className="animate-fadeInUp">
+          <h2 className="text-4xl font-bold gradient-text mb-12 text-center">External Networking</h2>
           <div className="space-y-8">
-            <div className="bg-white rounded-2xl p-10 shadow-xl border border-gray-100">
+            <div className="bg-white rounded-2xl p-10 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300">
               <h3 className="text-2xl font-bold text-navy mb-6">Demo Day & IR</h3>
               <div className="pl-6 border-l-4 border-sky-500 space-y-4">
                 <p className="text-lg text-charcoal">
-                  • 매 학기 말 투자자·액셀러레이터·스타트업 대표 초청
+                  • 매 학기 말 투자자·액셀러레이터·스타트업 대표 초청과 함께 학회 Demo Day
                 </p>
                 <p className="text-lg text-charcoal">
                   • 팀별 프로젝트 발표 및 현장 피드백
@@ -75,28 +72,43 @@ export default function NetworkPage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-10 shadow-xl border border-gray-100">
+            <div className="bg-white rounded-2xl p-10 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300">
               <h3 className="text-2xl font-bold text-navy mb-6">Expert Sessions</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="pl-6 border-l-4 border-sky-500">
                   <h4 className="text-xl font-semibold mb-4">기술 특강</h4>
-                  <ul className="space-y-2 text-charcoal">
-                    <li>• AI 대기업 수석 엔지니어</li>
-                    <li>• MLOps 전문가</li>
+                  <ul className="space-y-4 text-charcoal">
+                    <li className="space-y-2">
+                      <p className="font-medium">• AI 대기업 수석 엔지니어</p>
+                      <p className="text-gray-600 text-sm pl-4">AI 프로젝트 사례와 현업 노하우를 통한 실무 중심 기술 트렌드 분석</p>
+                    </li>
+                    <li className="space-y-2">
+                      <p className="font-medium">• MLOps 전문가</p>
+                      <p className="text-gray-600 text-sm pl-4">머신러닝 파이프라인의 효율적 구축부터 운영까지, 베스트 프랙티스와 실무 팁 공유 및 학습 활동</p>
+                    </li>
                   </ul>
                 </div>
                 <div className="pl-6 border-l-4 border-sky-500">
                   <h4 className="text-xl font-semibold mb-4">창업 특강</h4>
-                  <ul className="space-y-2 text-charcoal">
-                    <li>• 시리즈 B+ 스타트업 CEO</li>
-                    <li>• VC 파트너</li>
-                    <li>• 글로벌 액셀러레이터</li>
+                  <ul className="space-y-4 text-charcoal">
+                    <li className="space-y-2">
+                      <p className="font-medium">• 시리즈 B+ 스타트업 CEO</p>
+                      <p className="text-gray-600 text-sm pl-4">빠른 스케일업과 투자 유치 사례를 중심으로 보는 스타트업 성장 전략</p>
+                    </li>
+                    <li className="space-y-2">
+                      <p className="font-medium">• VC 파트너</p>
+                      <p className="text-gray-600 text-sm pl-4">스타트업의 가치 평가와 성공적인 투자 유치 노하우</p>
+                    </li>
+                    <li className="space-y-2">
+                      <p className="font-medium">• 글로벌 액셀러레이터</p>
+                      <p className="text-gray-600 text-sm pl-4">해외 시장 진출 기회 발굴</p>
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-10 shadow-xl border border-gray-100">
+            <div className="bg-white rounded-2xl p-10 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300">
               <h3 className="text-2xl font-bold text-navy mb-6">Strategic Partnerships</h3>
               <div className="pl-6 border-l-4 border-sky-500 space-y-4">
                 <p className="text-lg text-charcoal">

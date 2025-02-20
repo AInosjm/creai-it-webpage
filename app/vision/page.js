@@ -25,23 +25,23 @@ export default function VisionPage() {
             </p>
             <p className="text-lg text-gray-600 mt-6 italic">
               2024년, 우리의 첫 걸음은 작지만<br />
-              대한민국 AI 창업 생태계의 새로운 기준이 되겠습니다.
+              AI 창업 생태계를 이끄는 단체가 되겠습니다.
             </p>
           </div>
         </section>
 
         <section className="animate-fadeInUp">
-          <h2 className="text-4xl font-bold gradient-text mb-12">Strategic Roadmap</h2>
+          <h2 className="text-4xl font-bold gradient-text mb-8 leading-tight">Strategic Roadmap</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100">
-              <div className="w-16 h-16 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl mb-8 flex items-center justify-center text-white font-bold text-xl">
+              <div className="w-16 h-16 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl mb-6 flex items-center justify-center text-white font-bold text-xl">
                 1Y
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">단기 목표</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">단기 목표</h3>
               <ul className="space-y-4 text-gray-600">
                 <li className="flex items-start space-x-3">
                   <span className="text-sky-500">•</span>
-                  <span>안정적 AI 서비스 운영을 위한 MLOps 구축</span>
+                  <span>AI 서비스 운영을 위한 MLOps 구축</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <span className="text-sky-500">•</span>
@@ -54,10 +54,10 @@ export default function VisionPage() {
               </ul>
             </div>
             <div className="bg-white rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100">
-              <div className="w-16 h-16 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl mb-8 flex items-center justify-center text-white font-bold text-xl">
+              <div className="w-16 h-16 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl mb-6 flex items-center justify-center text-white font-bold text-xl">
                 3Y
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">중기 목표</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">중기 목표</h3>
               <ul className="space-y-4 text-gray-600">
                 <li className="flex items-start space-x-3">
                   <span className="text-sky-500">•</span>
@@ -74,10 +74,10 @@ export default function VisionPage() {
               </ul>
             </div>
             <div className="bg-white rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100">
-              <div className="w-16 h-16 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl mb-8 flex items-center justify-center text-white font-bold text-xl">
+              <div className="w-16 h-16 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl mb-6 flex items-center justify-center text-white font-bold text-xl">
                 5Y+
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">장기 비전</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">장기 비전</h3>
               <ul className="space-y-4 text-gray-600">
                 <li className="flex items-start space-x-3">
                   <span className="text-sky-500">•</span>
@@ -101,10 +101,10 @@ export default function VisionPage() {
           <div className="bg-white rounded-2xl p-12 shadow-xl border border-gray-100">
             <p className="text-lg md:text-xl text-charcoal leading-relaxed mb-8">
               CREAI+IT는 단순한 프로젝트 모임을 넘어, 
-              <span className="font-semibold text-navy"> 기술 혁신가들이 서로의 지식과 경험을 나누며 
+              <span className="font-semibold text-navy"> 기술 혁신가들이 지식과 경험을 나누며 
               함께 성장하는 네트워크</span>를 지향합니다. 
-              <span className="text-sky-700 font-medium">신생 커뮤니티이지만, 우리의 열정과 도전정신으로 
-              대한민국 AI 창업의 미래를 선도할 것입니다.</span>
+              <span className="text-sky-700 font-medium">열정과 끝없는 도전정신으로 
+              대한민국을 넘어 글로벌 AI 창업의 미래를 선도할 것입니다.</span>
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-4">
