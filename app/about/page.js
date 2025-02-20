@@ -136,7 +136,7 @@ export default function AboutPage() {
           </p>
           <a
             href="/join"
-            className="inline-block bg-gradient-to-r from-sky-600 to-blue-700 text-white text-lg md:text-xl font-semibold px-8 md:px-12 py-4 md:py-5 rounded-lg md:rounded-xl shadow-lg hover:from-sky-700 hover:to-blue-800 transition-all duration-300"
+            className="inline-block bg-white text-sky-600 text-lg md:text-xl font-semibold px-8 md:px-12 py-4 md:py-5 rounded-lg md:rounded-xl shadow-lg hover:bg-sky-50 transition-all duration-300"
           >
             지원하기
           </a>
