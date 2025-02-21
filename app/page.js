@@ -136,7 +136,7 @@ export default function HomePage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3 text-center md:text-left">우리의 접근 방식</h3>
+                    <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3 text-center md:text-left">우리의 지향점</h3>
                     <p className="text-gray-500 leading-relaxed text-base md:text-base">
                       우리는 Microsoft나 Apple처럼 혁명을 이끄는 기업이 되려는 것이 아닙니다. 대신, 그러한 변화 속에서 새로운 가치를 창출한 네이버, 카카오, 배달의민족처럼 작은 혁신을 만들어가고자 합니다. 마찬가지로, 우리는 OpenAI가 되고자 하지 않습니다. OpenAI가 만들어낸 생성형 AI 혁명을 발판 삼아, 새로운 기회를 포착하고 혁신을 이루고자 합니다.
                     </p>
