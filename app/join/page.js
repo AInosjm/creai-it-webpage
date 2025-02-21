@@ -121,7 +121,7 @@ export default function JoinPage() {
 
         <div className="text-center animate-fadeInUp">
           <a
-            href="https://forms.gle/example-form"
+            href="https://forms.gle/gFghb6nLn2ccnTKw8"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gradient-to-r from-sky-600 to-blue-600 text-charcoal text-xl sm:text-2xl font-semibold px-8 sm:px-16 py-4 sm:py-6 rounded-full shadow-xl sm:shadow-2xl hover:shadow-sky-500/25 hover:scale-105 transition-all duration-300"
