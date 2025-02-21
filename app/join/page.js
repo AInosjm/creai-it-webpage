@@ -17,7 +17,7 @@ export default function JoinPage() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-8 py-16 sm:py-32 space-y-16 sm:space-y-32">
         <section className="animate-fadeInUp">
-          <h2 className="text-3xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-blue-600 mb-8 sm:mb-16 text-center">Qualification</h2>
+          <h2 className="text-3xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-blue-600 mb-8 sm:mb-16 text-center gradient-text">Qualification</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12">
             <div className="group bg-white/50 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-6 sm:p-12 shadow-xl sm:shadow-2xl border border-white/20 hover:border-sky-500/30 transition-all duration-500">
               <h3 className="text-2xl sm:text-3xl font-bold text-navy mb-6 sm:mb-8 group-hover:text-sky-600 transition-colors">필수 요건</h3>
@@ -58,15 +58,15 @@ export default function JoinPage() {
                     </div>
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center group hover:bg-sky-50/50 p-4 rounded-xl transition-all">
                       <span className="text-lg sm:text-xl text-charcoal/80">인터뷰</span>
-                      <span className="text-lg sm:text-xl text-sky-600 font-semibold mt-2 sm:mt-0">3월 6일 - 7일</span>
+                      <span className="text-lg sm:text-xl text-sky-600 font-semibold mt-2 sm:mt-0">3월 6일 - 8일</span>
                     </div>
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center group hover:bg-sky-50/50 p-4 rounded-xl transition-all">
                       <span className="text-lg sm:text-xl text-charcoal/80">최종 발표</span>
-                      <span className="text-lg sm:text-xl text-sky-600 font-semibold mt-2 sm:mt-0">3월 8일</span>
+                      <span className="text-lg sm:text-xl text-sky-600 font-semibold mt-2 sm:mt-0">3월 9일</span>
                     </div>
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center group hover:bg-sky-50/50 p-4 rounded-xl transition-all">
                       <span className="text-lg sm:text-xl text-charcoal/80">오리엔테이션</span>
-                      <span className="text-lg sm:text-xl text-sky-600 font-semibold mt-2 sm:mt-0">3월 9일</span>
+                      <span className="text-lg sm:text-xl text-sky-600 font-semibold mt-2 sm:mt-0">3월 10일</span>
                     </div>
                   </div>
                 </div>
