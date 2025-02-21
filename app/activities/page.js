@@ -10,6 +10,19 @@ export default function ActivitiesPage() {
             Generative AI와 Agentic System을 깊이 이해하고<br className="hidden md:block" />
             실제 가치 창출로 연결하는 16주 커리큘럼을 제공합니다.
           </p>
+          <div className="mt-8">
+            <a 
+              href="https://creai-it.notion.site"
+              target="_blank"
+              rel="noopener noreferrer" 
+              className="inline-flex items-center px-8 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full text-white font-semibold transition-all duration-300 hover:scale-105 backdrop-blur-sm group"
+            >
+              <span>상세 커리큘럼 보기</span>
+              <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -148,6 +161,20 @@ export default function ActivitiesPage() {
             </div>
           </div>
         </section>
+
+        <div className="text-center">
+          <a 
+            href="https://creai-it.notion.site"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-navy to-blue-600 text-white rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+          >
+            <span>전체 커리큘럼 자세히 보기</span>
+            <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   );
