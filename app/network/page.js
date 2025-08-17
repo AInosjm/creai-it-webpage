@@ -1,133 +1,271 @@
-// app/network/page.js
+'use client'
+
+import { motion } from 'framer-motion';
+
 export default function NetworkPage() {
+  const networkValues = [
+    {
+      title: '함께 성장',
+      description: 'AI에 대한 열정을 가진 60명이 넘는 동료들과 함께 배우고 성장합니다',
+      number: '01'
+    },
+    {
+      title: '실전 경험',
+      description: '4개의 창업 팀이 실제 프로젝트를 진행하며 경험을 쌓고 있습니다',
+      number: '02'
+    },
+    {
+      title: '전문가 멘토링',
+      description: '15명 이상의 업계 전문가들이 실질적인 조언과 경험을 공유합니다',
+      number: '03'
+    }
+  ];
+
+  const ecosystem = [
+    {
+      type: '학내 파트너',
+      items: ['연세대 공학대학', 'Y-Ventures', '창업지원단', 'AI 연구실'],
+    },
+    {
+      type: '외부 협력',
+      items: ['Disquiet', 'JUNCTION', 'GDSC', '스타트업 커뮤니티'],
+    },
+    {
+      type: '진행 프로젝트',
+      items: ['AINOS', 'RootEdu', 'Potentivo Lab', 'AI 교육 플랫폼'],
+    }
+  ];
+
+  const activities = [
+    {
+      name: '정기 세션',
+      description: '매주 월/목 AI 기술과 창업 인사이트를 나눕니다',
+      frequency: '주 2회'
+    },
+    {
+      name: '프로젝트 데이',
+      description: '팀 프로젝트 진행 상황을 공유하고 피드백을 받습니다',
+      frequency: '월 1회'
+    },
+    {
+      name: '네트워킹 모임',
+      description: '알럼나이와 현재 멤버들이 만나 경험을 나눕니다',
+      frequency: '학기별'
+    },
+    {
+      name: '데모데이',
+      description: '한 학기 동안의 성과를 발표하고 축하합니다',
+      frequency: '학기말'
+    }
+  ];
+
   return (
-    <div className="w-full">
-      <div className="relative bg-gradient-to-r from-navy to-sky-900 py-16 sm:py-32 px-4 sm:px-6 text-center overflow-hidden">
-        <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:60px_60px]" />
-        <div className="relative z-10 max-w-4xl mx-auto">
-          <h1 className="text-4xl sm:text-6xl font-extrabold text-white mb-4 sm:mb-8 animate-fadeInUp">Our Network</h1>
-          <p className="text-lg sm:text-xl text-white/90 leading-relaxed animate-fadeInUp delay-100">
-            CREAI+IT는 내부 커뮤니티의 긴밀한 협력과<br className="hidden sm:block" />
-            글로벌 AI·스타트업 생태계와의 연결을 통해<br className="hidden sm:block" />
-            여러분의 혁신을 현실로 만들어갑니다.
-          </p>
+    <div className="min-h-screen bg-white">
+      {/* Hero Section - Subtle Glassmorphism */}
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+        {/* Subtle Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-slate-100" />
+        
+        {/* Metallic Pattern */}
+        <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center opacity-[0.03]" />
+        
+        {/* Glass Elements */}
+        <div className="absolute top-20 right-20 w-52 h-52 bg-slate-200/20 backdrop-blur-2xl rounded-full border border-slate-200/30 opacity-50" />
+        <div className="absolute bottom-20 left-20 w-40 h-40 bg-white/25 backdrop-blur-xl rounded-full border border-white/50 opacity-60" />
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            {/* Glass Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/45 backdrop-blur-md border border-white/60 shadow-sm mb-8">
+              <div className="w-2 h-2 bg-slate-600 rounded-full" />
+              <span className="text-sm font-semibold text-slate-700">Our Network</span>
+            </div>
+            
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-8">
+              우리의 <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-700 to-slate-500 font-extrabold">네트워크</span>
+            </h1>
+            <p className="text-lg md:text-xl lg:text-2xl text-slate-600 font-medium max-w-4xl mx-auto leading-relaxed px-4">
+              혼자서는 불가능한 일도, 함께라면 가능합니다.
+              <br className="hidden md:block" />
+              CREAI+IT는 서로를 성장시키는 커뮤니티입니다.
+            </p>
+          </motion.div>
         </div>
-      </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-8 sm:space-y-12">
-        <section className="animate-fadeInUp">
-          <h2 className="text-3xl sm:text-4xl font-bold gradient-text mb-6 sm:mb-8 text-center">Internal Networking</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-            <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 transform hover:-translate-y-2">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-lg sm:rounded-xl mb-4 flex items-center justify-center">
-              </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">정기 스터디 그룹</h3>
-              <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-600">
-                <li>• LLM Prompt Engineering 심화</li>
-                <li>• AI 윤리·거버넌스</li>
-                <li>• Data-Driven Startup</li>
-                <li>• MLOps Best Practices</li>
-              </ul>
-            </div>
-            <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 transform hover:-translate-y-2">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-lg sm:rounded-xl mb-4 flex items-center justify-center">
-              </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">프로젝트 발표회</h3>
-              <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-600">
-                <li>• 격주 진행 프로젝트 리뷰</li>
-                <li>• 팀간 상호 피드백</li>
-                <li>• 공동 디버깅 세션</li>
-                <li>• 아이디어 발전 워크샵</li>
-              </ul>
-            </div>
-            <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 transform hover:-translate-y-2">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-lg sm:rounded-xl mb-4 flex items-center justify-center">
-              </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">해커톤 & 아이디어톤</h3>
-              <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-600">
-                <li>• 24-48시간 집중 개발</li>
-                <li>• 창의적 솔루션 도출</li>
-                <li>• 팀 빌딩 기회</li>
-                <li>• 수시 진행</li>
-              </ul>
-            </div>
+        {/* Subtle Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+          <div className="w-6 h-10 rounded-full border-2 border-slate-300/60 flex justify-center pt-2 bg-white/20 backdrop-blur-sm">
+            <div className="w-1 h-2 bg-slate-400 rounded-full" />
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="animate-fadeInUp">
-          <h2 className="text-3xl sm:text-4xl font-bold gradient-text mb-8 sm:mb-12 text-center">External Networking</h2>
-          <div className="space-y-6 sm:space-y-8">
-            <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-10 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300">
-              <h3 className="text-xl sm:text-2xl font-bold text-navy mb-4 sm:mb-6">Demo Day & IR</h3>
-              <div className="pl-4 sm:pl-6 border-l-4 border-sky-500 space-y-3 sm:space-y-4">
-                <p className="text-base sm:text-lg text-charcoal">
-                  • 매 학기 말 투자자·액셀러레이터·스타트업 대표 초청과 함께 학회 Demo Day
-                </p>
-                <p className="text-base sm:text-lg text-charcoal">
-                  • 팀별 프로젝트 발표 및 현장 피드백
-                </p>
-                <p className="text-base sm:text-lg text-charcoal">
-                  • 실제 투자 유치 기회 제공
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-10 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300">
-              <h3 className="text-xl sm:text-2xl font-bold text-navy mb-4 sm:mb-6">Expert Sessions</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-                <div className="pl-4 sm:pl-6 border-l-4 border-sky-500">
-                  <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">기술 특강</h4>
-                  <ul className="space-y-3 sm:space-y-4 text-charcoal">
-                    <li className="space-y-1 sm:space-y-2">
-                      <p className="text-sm sm:text-base font-medium">• AI 대기업 수석 엔지니어</p>
-                      <p className="text-xs sm:text-sm text-gray-600 pl-3 sm:pl-4">AI 프로젝트 사례와 현업 노하우를 통한 실무 중심 기술 트렌드 분석</p>
-                    </li>
-                    <li className="space-y-1 sm:space-y-2">
-                      <p className="text-sm sm:text-base font-medium">• MLOps 전문가</p>
-                      <p className="text-xs sm:text-sm text-gray-600 pl-3 sm:pl-4">머신러닝 파이프라인의 효율적 구축부터 운영까지, 베스트 프랙티스와 실무 팁 공유 및 학습 활동</p>
-                    </li>
-                  </ul>
+      {/* Core Values */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-12">
+            {networkValues.map((value, index) => (
+              <motion.div
+                key={value.title}
+                className="text-center"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <div className="mb-6">
+                  <span className="text-6xl font-extralight text-slate-300">{value.number}</span>
                 </div>
-                <div className="pl-4 sm:pl-6 border-l-4 border-sky-500">
-                  <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">창업 특강</h4>
-                  <ul className="space-y-3 sm:space-y-4 text-charcoal">
-                    <li className="space-y-1 sm:space-y-2">
-                      <p className="text-sm sm:text-base font-medium">• 시리즈 B+ 스타트업 CEO</p>
-                      <p className="text-xs sm:text-sm text-gray-600 pl-3 sm:pl-4">빠른 스케일업과 투자 유치 사례를 중심으로 보는 스타트업 성장 전략</p>
-                    </li>
-                    <li className="space-y-1 sm:space-y-2">
-                      <p className="text-sm sm:text-base font-medium">• VC 파트너</p>
-                      <p className="text-xs sm:text-sm text-gray-600 pl-3 sm:pl-4">스타트업의 가치 평가와 성공적인 투자 유치 노하우</p>
-                    </li>
-                    <li className="space-y-1 sm:space-y-2">
-                      <p className="text-sm sm:text-base font-medium">• 글로벌 액셀러레이터</p>
-                      <p className="text-xs sm:text-sm text-gray-600 pl-3 sm:pl-4">해외 시장 진출 기회 발굴</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-10 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300">
-              <h3 className="text-xl sm:text-2xl font-bold text-navy mb-4 sm:mb-6">Strategic Partnerships</h3>
-              <div className="pl-4 sm:pl-6 border-l-4 border-sky-500 space-y-3 sm:space-y-4">
-                <p className="text-base sm:text-lg text-charcoal">
-                  • Y-Venture와의 협업
-                </p>
-                <p className="text-base sm:text-lg text-charcoal">
-                  • Disqueit 등의 커뮤니티와 파트너쉽
-                </p>
-                <p className="text-base sm:text-lg text-charcoal">
-                  • AWS Activate, GCP for Startups 등 클라우드 크레딧 지원
-                </p>
-                <p className="text-base sm:text-lg text-charcoal">
-                  • Slush, Web Summit 등 글로벌 컨퍼런스 참가 기회
-                </p>
-              </div>
-            </div>
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">{value.title}</h3>
+                <p className="text-base text-slate-600 font-medium leading-relaxed">{value.description}</p>
+              </motion.div>
+            ))}
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+
+      {/* Ecosystem */}
+      <section className="py-24 bg-slate-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-4xl font-medium text-slate-900 mb-4">
+              우리가 함께하는 <span className="font-extrabold">생태계</span>
+            </h2>
+            <p className="text-lg text-slate-600 font-medium">
+              다양한 파트너와 협력하며 성장합니다
+            </p>
+          </motion.div>
+
+          <div className="space-y-8">
+            {ecosystem.map((group, index) => (
+              <motion.div
+                key={group.type}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="bg-white p-8 rounded-2xl shadow-sm"
+              >
+                <h3 className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-4">
+                  {group.type}
+                </h3>
+                <div className="flex flex-wrap gap-3">
+                  {group.items.map((item, i) => (
+                    <span
+                      key={i}
+                      className="px-4 py-2 bg-slate-50 text-slate-700 rounded-lg text-sm font-semibold"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Activities Timeline */}
+      <section className="py-24 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-4xl font-medium text-slate-900 mb-4">
+              함께하는 <span className="font-extrabold">활동</span>
+            </h2>
+            <p className="text-lg text-slate-600 font-medium">
+              정기적인 만남을 통해 지속적으로 교류합니다
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {activities.map((activity, index) => (
+              <motion.div
+                key={activity.name}
+                className="flex items-start space-x-4"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <div className="flex-shrink-0 w-1 h-full bg-gradient-to-b from-sky-500 to-blue-600 rounded-full" />
+                <div className="flex-grow">
+                  <div className="flex items-baseline justify-between mb-2">
+                    <h3 className="text-xl font-bold text-slate-900">{activity.name}</h3>
+                    <span className="text-sm text-sky-600 font-semibold">{activity.frequency}</span>
+                  </div>
+                  <p className="text-slate-600 font-medium">{activity.description}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonial */}
+      <section className="py-24 bg-gradient-to-b from-slate-50 to-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            className="text-center"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="mb-8">
+              <span className="text-6xl font-extralight text-sky-500/20">"</span>
+            </div>
+            <blockquote className="text-xl md:text-2xl font-medium text-slate-700 leading-relaxed mb-8 px-4">
+              CREAI+IT에서 만난 동료들과 함께
+              <br />
+              불가능해 보였던 아이디어를 현실로 만들고 있습니다.
+              <br />
+              이곳은 단순한 학회가 아닌, <span className="font-bold">꿈을 실현하는 공간</span>입니다.
+            </blockquote>
+            <cite className="text-sm text-slate-500 font-semibold">
+              - CREAI+IT 1기 멤버
+            </cite>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-24 bg-gradient-to-br from-slate-900 to-slate-800">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-4xl font-medium text-white mb-6">
+              함께 성장할 <span className="font-extrabold">동료</span>가 되어주세요
+            </h2>
+            <p className="text-lg md:text-xl text-white/80 font-medium mb-10 px-4">
+              CREAI+IT의 네트워크에 합류하여 더 큰 가능성을 만들어가세요
+            </p>
+            <a href="/join" className="inline-flex items-center px-8 py-4 bg-white text-slate-900 font-semibold hover:bg-slate-100 transition-colors">
+              지원하기
+              <span className="ml-2">→</span>
+            </a>
+          </motion.div>
+        </div>
+      </section>
     </div>
   );
 }

@@ -1,181 +1,352 @@
-// app/activities/page.js
+'use client'
+
 export default function ActivitiesPage() {
+  // 3 Seasons Overview
+  const seasons = [
+    {
+      season: 1,
+      title: 'Season 1: 프로토타이핑',
+      period: 'Week 1-5',
+      color: 'from-sky-500 to-blue-600',
+      description: 'AI 기술의 기초를 다지고 아이디어를 빠르게 구현해보는 단계',
+      highlights: [
+        'AI 에이전트와 LLM 기초 학습',
+        'RAG 시스템 구축 실습',
+        '문제 발굴과 아이디어 검증',
+        '빠른 프로토타입 개발',
+        'MVP 테스트와 피드백'
+      ]
+    },
+    {
+      season: 2,
+      title: 'Season 2: 프로덕트 제작',
+      period: 'Week 6-10',
+      color: 'from-violet-500 to-purple-600',
+      description: '검증된 아이디어를 실제 사용 가능한 제품으로 발전시키는 단계',
+      highlights: [
+        '프로덕션 레벨 시스템 구축',
+        '사용자 경험(UX) 최적화',
+        '성능 튜닝과 최적화',
+        '팀 협업과 프로젝트 관리',
+        '실제 사용자 테스트'
+      ]
+    },
+    {
+      season: 3,
+      title: 'Season 3: 수익화',
+      period: 'Week 11-15',
+      color: 'from-emerald-500 to-green-600',
+      description: '제품을 시장에 출시하고 비즈니스 모델을 구축하는 단계',
+      highlights: [
+        '비즈니스 모델 수립',
+        '고객 획득 전략',
+        '성장 해킹과 마케팅',
+        '투자 유치 준비',
+        '데모데이 발표'
+      ]
+    }
+  ];
+
+  const tracks = [
+    {
+      title: '기술 트랙',
+      number: '01',
+      focus: 'AI/ML 엔지니어링',
+      skills: [
+        'LLM 애플리케이션 개발',
+        '벡터 데이터베이스 & RAG',
+        '에이전트 아키텍처',
+        '모델 파인튜닝',
+        '프로덕션 배포'
+      ]
+    },
+    {
+      title: '프로덕트 트랙',
+      number: '02',
+      focus: '프로덕트 매니지먼트',
+      skills: [
+        '문제 발굴',
+        '사용자 리서치',
+        '프로덕트 전략',
+        '그로스 해킹',
+        '데이터 분석'
+      ]
+    },
+    {
+      title: '비즈니스 트랙',
+      number: '03',
+      focus: '스타트업 창업',
+      skills: [
+        '비즈니스 모델 설계',
+        '시장 검증',
+        '펀드레이징 전략',
+        '팀 빌딩',
+        '시장 진출 전략'
+      ]
+    }
+  ];
+
+
   return (
-    <div className="w-full">
-      <div className="relative bg-gradient-to-r from-navy to-sky-900 py-16 md:py-32 px-4 md:px-6 text-center overflow-hidden">
-        <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:60px_60px]" />
-        <div className="relative z-10 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4 md:mb-8 animate-fadeInUp">What We Do</h1>
-          <p className="text-lg md:text-xl text-white/90 leading-relaxed animate-fadeInUp delay-100">
-            Generative AI와 Agentic System을 깊이 이해하고<br className="hidden md:block" />
-            실제 가치 창출로 연결하는 16주 커리큘럼을 제공합니다.
-          </p>
-          <div className="mt-8">
+    <div className="min-h-screen bg-white">
+      {/* Hero Section - Subtle Glassmorphism */}
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+        {/* Subtle Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-slate-100" />
+        
+        {/* Metallic Pattern */}
+        <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center opacity-[0.03]" />
+        
+        {/* Glass Elements */}
+        <div className="absolute top-1/4 right-1/4 w-48 h-48 bg-slate-200/20 backdrop-blur-2xl rounded-full border border-slate-200/30 opacity-50" />
+        <div className="absolute bottom-1/4 left-1/4 w-36 h-36 bg-white/25 backdrop-blur-xl rounded-full border border-white/50 opacity-60" />
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div>
+            {/* Glass Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/45 backdrop-blur-md border border-white/60 shadow-sm mb-8">
+              <div className="w-2 h-2 bg-slate-600 rounded-full" />
+              <span className="text-sm font-semibold text-slate-700">Curriculum 2025</span>
+            </div>
+            
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-8">
+              2025-2 <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-700 to-slate-500 font-extrabold">커리큘럼</span>
+            </h1>
+            <p className="text-lg sm:text-xl md:text-2xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-medium px-4">
+              AI Agent 시대를 선도하는 15주 집중 프로그램
+              <br className="hidden md:block" />
+              체계적인 성장과 실전 경험을 통한 AI 전문가 양성
+            </p>
+          </div>
+        </div>
+
+        {/* Subtle Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+          <div className="w-6 h-10 rounded-full border-2 border-slate-300/60 flex justify-center pt-2 bg-white/20 backdrop-blur-sm">
+            <div className="w-1 h-2 bg-slate-400 rounded-full" />
+          </div>
+        </div>
+      </section>
+
+      {/* Learning Tracks */}
+      <section className="py-20 bg-gradient-to-b from-white to-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-3">
+              학습 트랙
+            </h2>
+            <div className="w-12 h-px bg-slate-300 mx-auto" />
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {tracks.map((track, index) => (
+              <div
+                key={track.title}
+                className="bg-white p-8 border border-slate-100 hover:shadow-lg transition-all duration-300"
+              >
+                <div className="mb-6">
+                  <span className="text-6xl font-extralight text-slate-300">{track.number}</span>
+                </div>
+                <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">{track.title}</h3>
+                <p className="text-sm text-sky-600 font-semibold mb-6">{track.focus}</p>
+                <ul className="space-y-2">
+                  {track.skills.map((skill, i) => (
+                    <li key={i} className="text-sm text-slate-600 flex items-start">
+                      <span className="text-sky-500 mr-2">▸</span>
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          
+          {/* Mid-page CTA */}
+          <div className="text-center mt-16">
+            <p className="text-lg text-slate-700 mb-6">
+              체계적인 커리큘럼으로 AI 전문가로 성장하세요
+            </p>
             <a 
-              href="https://creai-it.notion.site"
-              target="_blank"
-              rel="noopener noreferrer" 
-              className="inline-flex items-center px-8 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full text-white font-semibold transition-all duration-300 hover:scale-105 backdrop-blur-sm group"
+              href="/join" 
+              className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-slate-900 hover:bg-slate-800 transition-all"
             >
-              <span>상세 커리큘럼 보기</span>
-              <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
+              지원하기
+              <span className="ml-2">→</span>
             </a>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="max-w-6xl mx-auto px-4 md:px-6 py-12 md:py-24 space-y-12 md:space-y-24">
-        {/* 전반기 섹션 */}
-        <section className="animate-fadeInUp">
-          <div className="flex items-center space-x-4 mb-8 md:mb-12">
-            <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br from-sky-500 to-blue-600 flex items-center justify-center text-sky-dark font-bold">1</div>
-            <h2 className="text-2xl md:text-4xl font-bold gradient-text">전반기: Agents & Problem Discovery</h2>
-          </div>
-          
-          <div className="bg-white rounded-xl md:rounded-2xl p-6 md:p-12 shadow-xl border border-gray-100">
-            <div className="space-y-8 md:space-y-12">
-              <div>
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6">Agents: LLM 기반의 자율적 시스템</h3>
-                <div className="pl-4 md:pl-6 border-l-4 border-sky-500 space-y-6 md:space-y-8">
-                  <div>
-                    <h4 className="text-lg md:text-xl font-semibold text-gray-800 mb-3">Agent 기본 개념 & 사례</h4>
-                    <ul className="space-y-2 md:space-y-3 text-base md:text-lg text-gray-600">
-                      <li>• Workflows vs. Agents: 자율적 시스템 설계 원리</li>
-                      <li>• LLM 기반 Tool-using Agent 아키텍처 이해</li>
-                      <li>• Prompt Chaining, Routing, Parallelization 패턴</li>
-                      <li>• Orchestrator-Workers, Evaluator-Optimizer 구조</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="text-lg md:text-xl font-semibold text-gray-800 mb-3">실무 적용 사례 연구</h4>
-                    <ul className="space-y-2 md:space-y-3 text-base md:text-lg text-gray-600">
-                      <li>• 고객지원 Agent: Knowledge Base + API 연동</li>
-                      <li>• 코딩 Agent: 자동 이슈 해결 & 테스트 루프</li>
-                      <li>• 검색/크롤링 Agent: 정보 수집 & 가공 자동화</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              
-              <div>
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6">Problem Discovery & Implementation</h3>
-                <div className="pl-4 md:pl-6 border-l-4 border-sky-500 space-y-6 md:space-y-8">
-                  <div>
-                    <h4 className="text-lg md:text-xl font-semibold text-gray-800 mb-3">문제 발굴 방법론</h4>
-                    <ul className="space-y-2 md:space-y-3 text-base md:text-lg text-gray-600">
-                      <li>• 산업별 AI 적용 가능성 분석 프레임워크</li>
-                      <li>• 사용자 Pain Point 발굴 & 검증 기법</li>
-                      <li>• AI 솔루션 적합성 평가 매트릭스</li>
-                      <li>• ROI 기반 우선순위 설정 방법</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="text-lg md:text-xl font-semibold text-gray-800 mb-3">Augmented LLM 실습</h4>
-                    <ul className="space-y-2 md:space-y-3 text-base md:text-lg text-gray-600">
-                      <li>• Model Context Protocol & LangChain 활용</li>
-                      <li>• Neo4j 기반 Knowledge Graph 구축</li>
-                      <li>• Langfuse로 LLM 모니터링 & 최적화</li>
-                      <li>• 배운 개념 기반 Agentic System 구현</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 후반기 섹션 */}
-        <section className="animate-fadeInUp">
-          <div className="flex items-center space-x-4 mb-8 md:mb-12">
-            <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br from-sky-500 to-blue-600 flex items-center justify-center text-black font-bold">2</div>
-            <h2 className="text-2xl md:text-4xl font-bold gradient-text">후반기: Advanced AI & Market Validation</h2>
-          </div>
-
-          <div className="bg-white rounded-xl md:rounded-2xl p-6 md:p-12 shadow-xl border border-gray-100">
-            <div className="space-y-8 md:space-y-12">
-              <div>
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6">심화 LLM Application</h3>
-                <div className="pl-4 md:pl-6 border-l-4 border-sky-500 space-y-6 md:space-y-8">
-                  <div>
-                    <h4 className="text-lg md:text-xl font-semibold text-gray-800 mb-3">최신 기술 트렌드 & 구현</h4>
-                    <ul className="space-y-2 md:space-y-3 text-base md:text-lg text-gray-600">
-                      <li>• Multi-Modal LLM 활용 & 통합</li>
-                      <li>• RAG 고도화 & Embedding 최적화</li>
-                      <li>• Fine-tuning & LoRA 적용 실습</li>
-                      <li>• AI 시스템 확장성 & 비용 최적화</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6">시장 검증 & 성장 전략</h3>
-                <div className="pl-4 md:pl-6 border-l-4 border-sky-500 space-y-6 md:space-y-8">
-                  <div>
-                    <h4 className="text-lg md:text-xl font-semibold text-gray-800 mb-3">Lean Startup 실전 적용</h4>
-                    <ul className="space-y-2 md:space-y-3 text-base md:text-lg text-gray-600">
-                      <li>• 가설 검증 기반 MVP 설계 & 개발</li>
-                      <li>• 사용자 피드백 수집 & 분석 방법론</li>
-                      <li>• Product-Market Fit 달성 전략</li>
-                      <li>• AI 서비스의 수익화 모델 설계</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 추가 활동 섹션 */}
-        <section className="animate-fadeInUp">
-          <h2 className="text-2xl md:text-4xl font-bold gradient-text mb-8 md:mb-12 text-center">Growth Support Program</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            <div className="bg-white rounded-xl md:rounded-2xl p-4 md:p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl mb-4 flex items-center justify-center">
-                <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+      {/* Seasons Overview */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-3">
+              커리큘럼 구성
+            </h2>
+            <div className="w-12 h-px bg-slate-300 mx-auto mb-6" />
+            <p className="text-lg text-slate-600 font-medium mb-8">
+              15주 동안 진행되는 3개의 시즌으로 체계적인 성장을 지원합니다
+            </p>
+            
+            {/* Notion Link Button - Fixed Color */}
+            <div>
+              <a 
+                href="https://www.notion.so/2517b287f0368041ab61cf868f49c0d3"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-slate-900 text-white font-semibold hover:bg-slate-800 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
-              </div>
-              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">Industry Network</h3>
-              <p className="text-sm md:text-base text-gray-600">AI 대기업 엔지니어, VC, 스타트업 CEO들과의 정기적인 교류 및 멘토링 기회 제공</p>
-            </div>
-            <div className="bg-white rounded-xl md:rounded-2xl p-4 md:p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl mb-4 flex items-center justify-center">
-                <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                주차별 상세 커리큘럼 보기
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
-              </div>
-              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">Startup Support</h3>
-              <p className="text-sm md:text-base text-gray-600">프로젝트당 최대 1,500만원 지원금, AWS/GCP 크레딧, 개발 장비 및 공간 제공</p>
-            </div>
-            <div className="bg-white rounded-xl md:rounded-2xl p-4 md:p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl mb-4 flex items-center justify-center">
-                <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-              </div>
-              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">Alumni Community</h3>
-              <p className="text-sm md:text-base text-gray-600">수료 후 Alumni 네트워크 참여, 후속 프로젝트 지원 및 창업 연계 프로그램 제공</p>
+              </a>
+              <p className="text-sm text-slate-500 mt-4">
+                각 주차별 세부 내용, 과제, 참고 자료를 확인하실 수 있습니다
+              </p>
             </div>
           </div>
-        </section>
 
-        <div className="text-center">
-          <a 
-            href="https://creai-it.notion.site"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-navy to-blue-600 text-white rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
-          >
-            <span>전체 커리큘럼 자세히 보기</span>
-            <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-          </a>
+          {/* Three Seasons */}
+          <div className="grid md:grid-cols-3 gap-8">
+            {seasons.map((season, index) => (
+              <div
+                key={season.season}
+                className="relative"
+              >
+                <div className="bg-white border border-slate-200 p-8 h-full hover:shadow-xl transition-all duration-300">
+                  {/* Season Number */}
+                  <div className="absolute -top-4 -right-4 w-16 h-16 flex items-center justify-center">
+                    <span className="text-6xl font-extralight text-slate-200">
+                      {season.season}
+                    </span>
+                  </div>
+                  
+                  {/* Season Header */}
+                  <div className="mb-6">
+                    <div className="inline-block px-4 py-1 bg-slate-900 text-white text-xs font-bold uppercase tracking-wider mb-3">
+                      {season.period}
+                    </div>
+                    <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3">
+                      {season.title}
+                    </h3>
+                    <p className="text-slate-600 font-bold leading-relaxed">
+                      {season.description}
+                    </p>
+                  </div>
+                  
+                  {/* Highlights */}
+                  <div className="space-y-3">
+                    <p className="text-xs font-bold text-slate-500 uppercase tracking-wider">
+                      주요 활동
+                    </p>
+                    <ul className="space-y-2">
+                      {season.highlights.map((highlight, i) => (
+                        <li key={i} className="text-sm text-slate-600 font-semibold flex items-start">
+                          <span className="text-sky-500 mr-2 mt-0.5">▸</span>
+                          {highlight}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                  {/* Subtle gradient line at bottom */}
+                  <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${season.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
+
+      {/* Support & Benefits */}
+      <section className="py-24 bg-gradient-to-b from-slate-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-3">
+              지원 및 혜택
+            </h2>
+            <div className="w-12 h-px bg-slate-300 mx-auto mb-6" />
+            <p className="text-lg text-slate-600 font-semibold">
+              여러분의 성장을 위한 전폭적인 지원
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                title: '멘토링 & 네트워킹',
+                number: '01',
+                items: [
+                  'Google, OpenAI 현직자 멘토링',
+                  'Y-Combinator 출신 창업가 세미나',
+                  'VC 네트워킹 세션',
+                  'Alumni 1:1 커피챗'
+                ]
+              },
+              {
+                title: '재정 & 리소스 지원',
+                number: '02',
+                items: [
+                  '프로젝트당 최대 1,500만원',
+                  'AWS/GCP 크레딧 $5,000',
+                  'OpenAI API 크레딧',
+                  '전용 GPU 서버 액세스'
+                ]
+              },
+              {
+                title: '성장 & 기회',
+                number: '03',
+                items: [
+                  '인턴십 연계 프로그램',
+                  '창업 인큐베이팅 지원',
+                  '글로벌 컨퍼런스 참가',
+                  'Demo Day 투자 연계'
+                ]
+              }
+            ].map((benefit, index) => (
+              <div
+                key={benefit.title}
+                className="text-center"
+              >
+                <div className="mb-6">
+                  <span className="text-6xl font-extralight text-slate-300">{benefit.number}</span>
+                </div>
+                <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-4">{benefit.title}</h3>
+                <ul className="space-y-2">
+                  {benefit.items.map((item, i) => (
+                    <li key={i} className="text-sm text-slate-600 font-medium">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-br from-slate-900 to-slate-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6">
+              AI 혁명에 함께할 준비가 되셨나요?
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10 font-semibold px-4">
+              CREAI+IT 4기와 함께 AI의 미래를 만들어갈 준비가 되셨나요?
+            </p>
+            <a href="/join" className="inline-flex items-center px-8 py-4 bg-white text-slate-900 font-semibold rounded-none hover:bg-slate-100 transition-colors">
+              지원하기
+              <span className="ml-2">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
