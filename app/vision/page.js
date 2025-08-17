@@ -224,7 +224,7 @@ export default function VisionPage() {
                 <h3 className="text-2xl font-semibold text-slate-900 mb-4">
                   Co-founder를 만나는 곳
                 </h3>
-                <p className="text-slate-600 font-medium leading-relaxed">
+                <p className="text-slate-600 font-medium leading-relaxed"> 
                   개발자와 기획자, 디자이너와 마케터가 만나
                   함께 스타트업을 시작하는 진짜 창업 팀이 탄생합니다.
                 </p>
