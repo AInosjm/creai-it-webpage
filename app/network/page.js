@@ -23,16 +23,12 @@ export default function NetworkPage() {
 
   const ecosystem = [
     {
-      type: '학내 파트너',
-      items: ['연세대 공학대학', 'Y-Ventures', '창업지원단', 'AI 연구실'],
+      type: '협력 기관',
+      items: ['연세대 인공지능융합대학', '연세대 SW 사업부', '창업지원단', 'Disquiet', 'Y-Ventures'],
     },
     {
-      type: '외부 협력',
-      items: ['Disquiet', 'JUNCTION', 'GDSC', '스타트업 커뮤니티'],
-    },
-    {
-      type: '진행 프로젝트',
-      items: ['AINOS', 'RootEdu', 'Potentivo Lab', 'AI 교육 플랫폼'],
+      type: '진행 팀',
+      items: ['AiNOS', 'RootEdu', 'Potentivo Lab', 'reseio'],
     }
   ];
 
